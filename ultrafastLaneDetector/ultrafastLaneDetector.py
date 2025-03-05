@@ -176,7 +176,7 @@ class UltrafastLaneDetector():
 				lanes_detected.append(False)
 
 			lanes_points.append(lane_points)
-		return np.array(lanes_points), np.array(lanes_detected)
+		return np.array(lanes_points,dtype=object), np.array(lanes_detected,dtype=object)
 
 	@staticmethod
 	def draw_lanes(input_img, lanes_points, lanes_detected, cfg, draw_points=True):
@@ -199,7 +199,6 @@ class UltrafastLaneDetector():
 
 
 	
-
 
 
 
